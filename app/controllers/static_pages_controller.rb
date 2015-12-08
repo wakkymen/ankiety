@@ -8,4 +8,12 @@ class StaticPagesController < ApplicationController
     
   end
   
+  def save
+    
+  end
+  
+  def add
+    
+  end
+  
 end

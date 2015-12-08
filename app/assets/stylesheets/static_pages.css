@@ -2,3 +2,80 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
+
+
+
+
+
+
+
+/*
+ * Radio buttons for 1-7 scales.
+ * */
+ 
+
+input[type=radio].onesevenscale {
+  visibility: hidden;
+  position: relative;
+
+  //margin-left: 5px;
+  width: 1.7em;
+  height: 1.7em;
+}
+
+input[type=radio].onesevenscale:before {
+  content: "";
+  visibility: visible;
+  position: absolute;
+  
+  color: #aaaaaa;
+  font-weight: bold;
+
+  border: 0.2em solid #aaaaaa;
+  border-radius: 50%;
+  
+  padding-left: 0.42em;
+  padding-top: 0.15em;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+input[type=radio].onesevenscale:hover:before {
+  background-color: #dddddd;
+  opacity: 0.6;
+}
+
+input[type=radio].onesevenscale:checked:before {
+  background-color: #dddddd;
+}
+
+input[type=radio].grade1:before {
+  content: "1";
+}
+
+input[type=radio].grade2:before {
+  content: "2";
+}
+
+input[type=radio].grade3:before {
+  content: "3";
+}
+
+input[type=radio].grade4:before {
+  content: "4";
+}
+
+input[type=radio].grade5:before {
+  content: "5";
+}
+
+input[type=radio].grade6:before {
+  content: "6";
+}
+
+input[type=radio].grade7:before {
+  content: "7";
+}
