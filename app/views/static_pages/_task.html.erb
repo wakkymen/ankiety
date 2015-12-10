@@ -1,54 +1,54 @@
 <div class="task-text">
-<%= %>dssddsdsdsdsdsddsds
+<%= task[:task_text] %>
 </div>
 
 
 <h4>Wskaż jak dalece każda z tych cech opisuje osobę opowiadającą historię - :</h4>
 
        
-<%= render 'question', item: "WSPIERAJĄCY INNYCH" %>
-<%= render 'question', item: "ZARADNY" %>
-<%= render 'question', item: "AKTYWNY" %>
-<%= render 'question', item: "POMOCNY" %>
+<%= render partial: 'question', locals: {item: "WSPIERAJĄCY INNYCH", addr: order+'_val1'} %>
+<%= render partial: 'question', locals: {item: "ZARADNY", addr: order+'_val2'} %>
+<%= render partial: 'question', locals: {item: "AKTYWNY", addr: order+'_val3'} %>
+<%= render partial: 'question', locals: {item: "POMOCNY", addr: order+'_val4'} %>
 
-<%= render 'question', item: "PRZEKONUJĄCY" %>
-<%= render 'question', item: "PRZEBOJOWY" %>
-<%= render 'question', item: "ROZUMIEJĄCY INNYCH" %>
+<%= render partial: 'question', locals: {item: "PRZEKONUJĄCY", addr: order+'_val5'} %>
+<%= render partial: 'question', locals: {item: "PRZEBOJOWY", addr: order+'_val6'} %>
+<%= render partial: 'question', locals: {item: "ROZUMIEJĄCY INNYCH", addr: order+'_val7'} %>
 
-<%= render 'question', item: "WSPÓŁCZUJĄCY" %>
-<%= render 'question', item: "ZDECYDOWANY" %>
-<%= render 'question', item: "ŻYCZLIWY" %>
-<%= render 'question', item: "PRZEDSIĘBIORCZY" %>
-<%= render 'question', item: "WRAŻLIWY NA INNYCH" %>
+<%= render partial: 'question', locals: {item: "WSPÓŁCZUJĄCY", addr: order+'_val8'} %>
+<%= render partial: 'question', locals: {item: "ZDECYDOWANY", addr: order+'_val9'} %>
+<%= render partial: 'question', locals: {item: "ŻYCZLIWY", addr: order+'_val10'} %>
+<%= render partial: 'question', locals: {item: "PRZEDSIĘBIORCZY", addr: order+'_val11'} %>
+<%= render partial: 'question', locals: {item: "WRAŻLIWY NA INNYCH", addr: order+'_val12'} %>
 
 
 <h4>Wskaż jak dalece każda z tych cech opisuje osobę - bohatera historii - :</h4>
-<%= render 'question', item: "WSPIERAJĄCY INNYCH" %>
-<%= render 'question', item: "ZARADNY" %>
-<%= render 'question', item: "AKTYWNY" %>
-<%= render 'question', item: "POMOCNY" %>
+<%= render partial: 'question', locals: {item: "WSPIERAJĄCY INNYCH", addr: order+'_val13'} %>
+<%= render partial: 'question', locals: {item: "ZARADNY", addr: order+'_val14'} %>
+<%= render partial: 'question', locals: {item: "AKTYWNY", addr: order+'_val15'} %>
+<%= render partial: 'question', locals: {item: "POMOCNY", addr: order+'_val16'} %>
 
-<%= render 'question', item: "PRZEKONUJĄCY" %>
-<%= render 'question', item: "PRZEBOJOWY" %>
-<%= render 'question', item: "ROZUMIEJĄCY INNYCH" %>
+<%= render partial: 'question', locals: {item: "PRZEKONUJĄCY", addr: order+'_val17'} %>
+<%= render partial: 'question', locals: {item: "PRZEBOJOWY", addr: order+'_val18'} %>
+<%= render partial: 'question', locals: {item: "ROZUMIEJĄCY INNYCH", addr: order+'_val19'} %>
 
-<%= render 'question', item: "WSPÓŁCZUJĄCY" %>
-<%= render 'question', item: "ZDECYDOWANY" %>
-<%= render 'question', item: "ŻYCZLIWY" %>
-<%= render 'question', item: "PRZEDSIĘBIORCZY" %>
-<%= render 'question', item: "WRAŻLIWY NA INNYCH" %>
+<%= render partial: 'question', locals: {item: "WSPÓŁCZUJĄCY", addr: order+'_val20'} %>
+<%= render partial: 'question', locals: {item: "ZDECYDOWANY", addr: order+'_val21'} %>
+<%= render partial: 'question', locals: {item: "ŻYCZLIWY", addr: order+'_val22'} %>
+<%= render partial: 'question', locals: {item: "PRZEDSIĘBIORCZY", addr: order+'_val23'} %>
+<%= render partial: 'question', locals: {item: "WRAŻLIWY NA INNYCH", addr: order+'_val24'} %>
 
 <p>Określ na skali jakie ogólne wrażenie robią na Tobie bohaterowie prezentowanej historii od 1 do 7, gdzie:  1- zdecydowanie negatywne, 2-negatywne, 3 – raczej negatywne, 4 – ani negatywne, ani pozytywne, 5 – raczej pozytywne, 6 – pozytywne, 7- zdecydowanie pozytywne</p>
 
 
-<%= render 'question', item: "Jakie ogólne wrażenie robi na Tobie osoba opowiadająca historię - ?" %>
-<%= render 'question', item: "Jakie ogólne wrażenie robi na Tobie bohater opowiadanej historii - ?" %>
+<%= render partial: 'question', locals: {item: "Jakie ogólne wrażenie robi na Tobie osoba opowiadająca historię - ?", addr: order+'_val25'} %>
+<%= render partial: 'question', locals: {item: "Jakie ogólne wrażenie robi na Tobie bohater opowiadanej historii - ?", addr: order+'_val26'} %>
 
 
 
 <p>Określ na skali jak chętnie poznałbyś bohatera opowiadanej historii od 1 do 7, gdzie 1 – zdecydowanie nie, 2 – nie, 3 – raczej nie, 4 – trudno powiedzieć, trochę tak, trochę nie, 5 – raczej tak, 6 – tak, 7 – zdecydowanie tak</p>
 
 
-<%= render 'question', item: "Jak chętnie poznałbyś bohatera tej historii - ?" %>
+<%= render partial: 'question', locals: {item: "Jak chętnie poznałbyś bohatera tej historii - ?", addr: order+'_val27'} %>
 
 <a class="text-center">Zrobione!</a>

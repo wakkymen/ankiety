@@ -1,11 +1,24 @@
-<p class="question"><span class="question-text"><strong><%= item %></strong></span><br/><span>
-                            <span class="text-left red"><strong>ZDECYDOWANIE NIE</strong></span>
-                            
-<input type='radio' name='test' class='grade1 onesevenscale'></input>
-<input type='radio' name='test' class='grade2 onesevenscale'></input>
-<input type='radio' name='test' class='grade3 onesevenscale'></input>
-<input type='radio' name='test' class='grade4 onesevenscale'></input>
-<input type='radio' name='test' class='grade5 onesevenscale'></input>
-<input type='radio' name='test' class='grade6 onesevenscale'></input>
-<input type='radio' name='test' class='grade7 onesevenscale'></input>
-       <span class="text-right green"><strong>ZDECYDOWANIE TAK</strong></span></span></p>
+<p class="question">
+	<span class="question-text">
+		<strong><%= item %></strong>
+		</span>
+		<br/>
+	<span>
+		<span class="text-left red">
+			<strong>ZDECYDOWANIE NIE</strong>
+		</span>            
+		
+		<%= radio_button_tag(addr, 1, class: "grade1 onesevenscale") %>
+		<%= radio_button_tag(addr, 2, class: "grade1 onesevenscale") %>
+		<%= radio_button_tag(addr, 3, class: "grade1 onesevenscale") %>
+		<%= radio_button_tag(addr, 4, class: "grade1 onesevenscale") %>
+		<%= radio_button_tag(addr, 5, class: "grade1 onesevenscale") %>
+		<%= radio_button_tag(addr, 6, class: "grade1 onesevenscale") %>
+		<%= radio_button_tag(addr, 7, class: "grade1 onesevenscale") %>
+
+
+		<span class="text-right green">
+			<strong>ZDECYDOWANIE TAK</strong>
+		</span>
+	</span>
+</p>
