@@ -29,6 +29,12 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
+    autoprefixer-rails (6.1.2)
+      execjs
+      json
+    bootstrap-sass (3.3.5)
+      autoprefixer-rails (>= 5.0.0.1)
+      sass (>= 3.2.19)
     builder (3.2.2)
     capybara (1.1.2)
       mime-types (>= 1.16)
@@ -122,6 +128,8 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (1.4.1)
+    turbolinks (2.5.3)
+      coffee-rails
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     tzinfo-data (1.2015.7)
@@ -137,6 +145,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  bootstrap-sass
   capybara
   coffee-rails
   jquery-rails
@@ -145,5 +154,6 @@ DEPENDENCIES
   rspec-rails
   sass-rails
   sqlite3
+  turbolinks
   tzinfo-data
   uglifier

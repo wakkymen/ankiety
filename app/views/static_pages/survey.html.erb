@@ -1,12 +1,13 @@
 <% provide(:title, 'Nasza Ankieta')%>
 
-<section>
+<section class="col-sm-12 introduction">
+<h3>Zapraszam do udziału w badaniu</h3>
 <p>Badanie, w którym będziesz uczestniczyć polega na zapoznaniu się z poniższymi historiami i ustosunkowaniu się do nich odpowiadając na poszczególne pytania. Swoją odpowiedź zaznacz na skali.</p>
 <p>Udział w badaniu jest całkowicie dobrowolny, a zbierane dane poufne. Proszę pamiętać, że nie ma tu złych, ani dobrych odpowiedzi. Proszę odpowiadać na pytania zgodnie ze swoim punktem widzenia. Czas trwania badania to około 5 minut. Jeśli chciał(a)byś uzyskać więcej informacji na temat tego badania, możesz skontaktować się ze mną drogą mailową: agakomorowska@wp.pl</p>
 
-<h3>Proszę zdecydować czy zgadzasz się dobrowolnie wziąć udział w badaniu i zaznaczyć swoją odpowiedź poniżej.
-<button>Tak, zgadzam się dobrowolnie wziąć udział w badaniu</button>
-<button>Nie, rezygnuję</button>
+<h4>Proszę zdecydować czy zgadzasz się dobrowolnie wziąć udział w badaniu i zaznaczyć swoją odpowiedź poniżej.</h4>
+<button id="accept">Tak, zgadzam się dobrowolnie wziąć udział w badaniu</button>
+<button id="nonono">Nie, rezygnuję</button>
 
 </section>
 
@@ -15,16 +16,19 @@
 
 
 
-<section>
+<section class="col-sm-12 ankieta-inactive instruction">
 <h3>Prosimy o uzupełnianie badania w prezentowanej kolejności:</h3>
 <p>Proszę zapoznaj się z poszczególnymi historiami, a następnie ustosunkuj się do nich odpowiadając na pytania. Odpowiedzi zaznacz na skali. Nie ma tu złych, ani dobrych odpowiedzi, proszę zaznacz tę odpowiedź, która najlepiej odzwierciedla to, jak postrzegasz bohaterów historii. Proszę uzupełnij poniższe skale.  Zaznacz stopień, w jakim poszczególne cechy opisują bohaterów historii w skali od 1 do 7, gdzie:     1 – zdecydowanie nie, 2 – nie, 3 – raczej nie, 4 – trudno powiedzieć, trochę tak, trochę nie, 5 – raczej tak, 6 – tak, 7 – zdecydowanie tak.</p>
+<button id="forward">Rozumiem</button>
 </section>
 
-<section>
+<form class="oneseven">
 
+<section class="col-sm-12 ankieta-inactive task">
 
-<%= %>
-
+<div class="task-text">
+<%= %>dssddsdsdsdsdsddsds
+</div>
 
 
 <p>Wskaż jak dalece każda z tych cech opisuje osobę opowiadającą historię - :</p>
@@ -32,8 +36,18 @@
 
 
 
-WSPIERAJĄCY INNYCH     
-                            ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+<p class="question"><span class="question-text"><strong>WSPIERAJĄCY INNYCH</strong></span><br/><span>
+                            <span class="text-left red"><strong>ZDECYDOWANIE NIE</strong></span>
+                            
+<input type='radio' name='test' class='grade1 onesevenscale'></input>
+<input type='radio' name='test' class='grade2 onesevenscale'></input>
+<input type='radio' name='test' class='grade3 onesevenscale'></input>
+<input type='radio' name='test' class='grade4 onesevenscale'></input>
+<input type='radio' name='test' class='grade5 onesevenscale'></input>
+<input type='radio' name='test' class='grade6 onesevenscale'></input>
+<input type='radio' name='test' class='grade7 onesevenscale'></input>
+       <span class="text-right green"><strong>ZDECYDOWANIE TAK</strong></span></span></p>
+
 ZARADNY          ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
 AKTYWNY         ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
 POMOCNY        ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
@@ -88,16 +102,195 @@ ZDECYDOWANIE NEGATYWNE	  1	2	3	4	5	6	7        ZDECYDOWANIE POZYTYWNE
 
 Jak chętnie poznałbyś bohatera tej historii - ?
 ZDECYDOWANIE NIE                     1                 2                3                4                 5             6                7              ZDECYDOWANIE TAK
-
+<a class="text-center">Zrobione!</a>
 
 </section>
-<section>
+<section class="col-sm-12 ankieta-inactive task">
+
+<div class="task-text">
+<%= %>dssddsdsdsdsdsddsds
+</div>
+
+
+<p>Wskaż jak dalece każda z tych cech opisuje osobę opowiadającą historię - :</p>
+
+
+
+
+<p class="question"><span class="question-text"><strong>WSPIERAJĄCY INNYCH</strong></span><br/><span>
+                            <span class="text-left red"><strong>ZDECYDOWANIE NIE</strong></span>
+                            
+<input type='radio' name='test' class='grade1 onesevenscale'></input>
+<input type='radio' name='test' class='grade2 onesevenscale'></input>
+<input type='radio' name='test' class='grade3 onesevenscale'></input>
+<input type='radio' name='test' class='grade4 onesevenscale'></input>
+<input type='radio' name='test' class='grade5 onesevenscale'></input>
+<input type='radio' name='test' class='grade6 onesevenscale'></input>
+<input type='radio' name='test' class='grade7 onesevenscale'></input>
+       <span class="text-right green"><strong>ZDECYDOWANIE TAK</strong></span></span></p>
+
+ZARADNY          ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+AKTYWNY         ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+POMOCNY        ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+PRZEKONUJĄCY     
+                            ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+PRZEBOJOWY     ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+ROZUMIEJĄCY INNYCH     
+                           ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+WSPÓŁCZUJĄCY       
+                            ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+ZDECYDOWANY ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+ŻYCZLIWY            ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+PRZEDSIĘBIORCZY        
+                             ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+WRAŻLIWY NA INNYCH    
+                             ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+Wskaż jak dalece każda z tych cech opisuje osobę - bohatera historii - :
+WSPIERAJĄCY INNYCH      
+                                  ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+ZARADNY          ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+AKTYWNY         ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+POMOCNY        ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+PRZEKONUJĄCY   
+                                    ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+PRZEBOJOWY          
+                                    ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+ROZUMIEJĄCY INNYCH      
+                                    ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+WSPÓŁCZUJĄCY 
+                                     ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+ZDECYDOWANY ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+ŻYCZLIWY            ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+PRZEDSIĘBIORCZY         
+                                     ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+WRAŻLIWY NA INNYCH     
+                                       ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+
+<p>Określ na skali jakie ogólne wrażenie robią na Tobie bohaterowie prezentowanej historii od 1 do 7, gdzie:  1- zdecydowanie negatywne, 2-negatywne, 3 – raczej negatywne, 4 – ani negatywne, ani pozytywne, 5 – raczej pozytywne, 6 – pozytywne, 7- zdecydowanie pozytywne</p>
+
+
+
+Jakie ogólne wrażenie robi na Tobie osoba opowiadająca historię - ?
+ZDECYDOWANIE NEGATYWNE	  1	2	3	4	5	6	7        ZDECYDOWANIE POZYTYWNE
+Jakie ogólne wrażenie robi na Tobie bohater opowiadanej historii - ?
+ZDECYDOWANIE NEGATYWNE	  1	2	3	4	5	6	7        ZDECYDOWANIE POZYTYWNE
+
+
+
+<p>Określ na skali jak chętnie poznałbyś bohatera opowiadanej historii od 1 do 7, gdzie 1 – zdecydowanie nie, 2 – nie, 3 – raczej nie, 4 – trudno powiedzieć, trochę tak, trochę nie, 5 – raczej tak, 6 – tak, 7 – zdecydowanie tak</p>
+
+
+
+Jak chętnie poznałbyś bohatera tej historii - ?
+ZDECYDOWANIE NIE                     1                 2                3                4                 5             6                7              ZDECYDOWANIE TAK
+<a class="text-center">Zrobione!</a>
+
+</section>
+<section class="col-sm-12 ankieta-inactive task">
+
+<div class="task-text">
+<%= %>dssddsdsdsdsdsddsds
+</div>
+
+
+<p>Wskaż jak dalece każda z tych cech opisuje osobę opowiadającą historię - :</p>
+
+
+
+
+<p class="question"><span class="question-text"><strong>WSPIERAJĄCY INNYCH</strong></span><br/><span>
+                            <span class="text-left red"><strong>ZDECYDOWANIE NIE</strong></span>
+                            
+<input type='radio' name='test' class='grade1 onesevenscale'></input>
+<input type='radio' name='test' class='grade2 onesevenscale'></input>
+<input type='radio' name='test' class='grade3 onesevenscale'></input>
+<input type='radio' name='test' class='grade4 onesevenscale'></input>
+<input type='radio' name='test' class='grade5 onesevenscale'></input>
+<input type='radio' name='test' class='grade6 onesevenscale'></input>
+<input type='radio' name='test' class='grade7 onesevenscale'></input>
+       <span class="text-right green"><strong>ZDECYDOWANIE TAK</strong></span></span></p>
+
+ZARADNY          ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+AKTYWNY         ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+POMOCNY        ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+PRZEKONUJĄCY     
+                            ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+PRZEBOJOWY     ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+ROZUMIEJĄCY INNYCH     
+                           ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+WSPÓŁCZUJĄCY       
+                            ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+ZDECYDOWANY ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+ŻYCZLIWY            ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+PRZEDSIĘBIORCZY        
+                             ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+WRAŻLIWY NA INNYCH    
+                             ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+Wskaż jak dalece każda z tych cech opisuje osobę - bohatera historii - :
+WSPIERAJĄCY INNYCH      
+                                  ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+ZARADNY          ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+AKTYWNY         ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+POMOCNY        ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+PRZEKONUJĄCY   
+                                    ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+PRZEBOJOWY          
+                                    ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+ROZUMIEJĄCY INNYCH      
+                                    ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+WSPÓŁCZUJĄCY 
+                                     ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+ZDECYDOWANY ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+ŻYCZLIWY            ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+PRZEDSIĘBIORCZY         
+                                     ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+WRAŻLIWY NA INNYCH     
+                                       ZDECYDOWANIE NIE	  1	2	3	4	5	6	7        ZDECYDOWANIE TAK
+
+<p>Określ na skali jakie ogólne wrażenie robią na Tobie bohaterowie prezentowanej historii od 1 do 7, gdzie:  1- zdecydowanie negatywne, 2-negatywne, 3 – raczej negatywne, 4 – ani negatywne, ani pozytywne, 5 – raczej pozytywne, 6 – pozytywne, 7- zdecydowanie pozytywne</p>
+
+
+
+Jakie ogólne wrażenie robi na Tobie osoba opowiadająca historię - ?
+ZDECYDOWANIE NEGATYWNE	  1	2	3	4	5	6	7        ZDECYDOWANIE POZYTYWNE
+Jakie ogólne wrażenie robi na Tobie bohater opowiadanej historii - ?
+ZDECYDOWANIE NEGATYWNE	  1	2	3	4	5	6	7        ZDECYDOWANIE POZYTYWNE
+
+
+
+<p>Określ na skali jak chętnie poznałbyś bohatera opowiadanej historii od 1 do 7, gdzie 1 – zdecydowanie nie, 2 – nie, 3 – raczej nie, 4 – trudno powiedzieć, trochę tak, trochę nie, 5 – raczej tak, 6 – tak, 7 – zdecydowanie tak</p>
+
+
+
+Jak chętnie poznałbyś bohatera tej historii - ?
+ZDECYDOWANIE NIE                     1                 2                3                4                 5             6                7              ZDECYDOWANIE TAK
+<a class="text-center">Zrobione!</a>
+
+</section>
+<section class="col-sm-12 ankieta-inactive task">
+<h3>Historia 4</h3>
+<%= render 'task' %>
+
+</section>
+<section class="col-sm-12 ankieta-inactive confirmation">
 <h3>Pytanie kontrolne:</h3>
 <p>Proszę określ stopień w jakim dokładnie zapoznałeś/łaś się z powyższymi historiami</p>
-
-
-W OGÓLE ICH NIE CZYTAŁEM/ŁAM	  1	2	3	4	5	6	7        CZYTAŁEM/ŁAM JE DOKŁADNIE
-
+<p class="question">
+		<span class="text-left red">
+			<strong>W OGÓLE ICH NIE CZYTAŁEM/ŁAM</strong>
+		</span>            
+		<input type='radio' name='test' class='grade1 onesevenscale'></input>
+		<input type='radio' name='test' class='grade2 onesevenscale'></input>
+		<input type='radio' name='test' class='grade3 onesevenscale'></input>
+		<input type='radio' name='test' class='grade4 onesevenscale'></input>
+		<input type='radio' name='test' class='grade5 onesevenscale'></input>
+		<input type='radio' name='test' class='grade6 onesevenscale'></input>
+		<input type='radio' name='test' class='grade7 onesevenscale'></input>
+		<span class="text-right green">
+			<strong>CZYTAŁEM/ŁAM JE DOKŁADNIE</strong>
+		</span>
+	</span>
+</p>
 
 <p>Proszę o podanie poniższych danych</p>
 
@@ -114,9 +307,6 @@ Wykształcenie
 □ wyższe
 
 Narodowość                  ……………………………………..
+<button id="submit">Dalej!</button>
 </section>
-<section>
-<h2>Informacja końcowa</h2>
-<p>Prezentowany materiał został przygotowany w celu przeprowadzenia badania. Jeśli chciał(a)byś uzyskać więcej informacji na temat tego badania, możesz się ze mną skontaktować drogą mailową: agakomorowska@wp.pl</p>             
-<h4>Dziękuję za udział w badaniu!</h4>
-</section>
+</form>
